@@ -84,25 +84,25 @@ namespace ue{
     }
 
 
-	Level genLevel(size_t n, size_t difficulty, size_t lifes, size_t bombs, int64_t points){
-	    if(lifes > MAX_PLAYER_HEALTH){
+    Level genLevel(size_t n, size_t difficulty, size_t lifes, size_t bombs, int64_t points){
+        if(lifes > MAX_PLAYER_HEALTH){
             lifes = MAX_PLAYER_HEALTH;
-	    }
-	    if(bombs > MAX_PLAYER_HEALTH){
+        }
+        if(bombs > MAX_PLAYER_HEALTH){
             bombs = MAX_PLAYER_HEALTH;
-	    }
+        }
 
-		Level level;
-		level.n = n;
-		level.diff = difficulty;
-		level.lifes = lifes;
-		level.bombs = bombs;
-		level.boss = newBoss(n);
-		level.boss->collidable.object->isBoss = true;
-		level.points = points;
+        Level level;
+        level.n = n;
+        level.diff = difficulty;
+        level.lifes = lifes;
+        level.bombs = bombs;
+        level.boss = newBoss(n);
+        level.boss->collidable.object->isBoss = true;
+        level.points = points;
 
-		reset_args();
+        reset_args();
 
-		return level;
-	}
+        return level;
+    }
 }

@@ -5,7 +5,7 @@
 #include <iostream>
 
 namespace ue{
-	void Game::dmg(){
+    void Game::dmg(){
         if(!stopped){
             if(invicibility <= 0.f){
                 invicibility = 2.f;

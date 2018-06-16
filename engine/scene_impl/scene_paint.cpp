@@ -5,7 +5,7 @@
 #include <iostream>
 
 namespace ue{
-	sf::Image window_icon;
+    sf::Image window_icon;
     sf::Vector2u window_icon_sz;
     std::string cheat;
 
@@ -234,7 +234,7 @@ namespace ue{
         toClearJobs = true;
     }
 
-	void Scene::update(float){
+    void Scene::update(float){
         for(size_t i = 0; i < toRemove.size(); i++){
             auto pos = std::remove(subjects.begin(), subjects.end(), toRemove[i]);
             if(!subjects[pos - subjects.begin()]->permanent){
@@ -276,7 +276,7 @@ namespace ue{
         }
     }
 
-	void Scene::paint(Subject* subj, sf::Vector2u dim, const float scaleX, const float scaleY){
+    void Scene::paint(Subject* subj, sf::Vector2u dim, const float scaleX, const float scaleY){
         Subject& sub = *subj;
 
         sf::Vector2f p = sub.location;
@@ -403,7 +403,7 @@ namespace ue{
         sub.paintOn(window);
     }
 
-	void Scene::clearMemory(){
+    void Scene::clearMemory(){
         toClear = true;
         toAdd.clear();
         toRemove.clear();

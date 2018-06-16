@@ -2,7 +2,7 @@
 #include "engine/scene.hpp"
 
 namespace ue{
-	void ScrollableTextButtonGroup::addButton(std::string text, std::function<void(void)>&& action){
+    void ScrollableTextButtonGroup::addButton(std::string text, std::function<void(void)>&& action){
         TextButton* btn = new TextButton();
 
         btn->text.setString(text);

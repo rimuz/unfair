@@ -52,17 +52,17 @@ namespace ue{
     };
 
     class Scene{
-		using TextPtr = Text*;
-		using BtnPtr = TextButton*;
-		using TextButtonGroupPtr = TextButtonGroup*;
-		using ScrTextButtonGroupPtr = ScrollableTextButtonGroup*;
-		using TextGroupPtr = TextGroup*;
-		using SubjectPtr = Subject*;
-		using GroupPtr = Group*;
-		using LifeViewerPtr = LifeViewer*;
-		using BossLifeViewerPtr = BossLifeViewer*;
-		using OptionsGroupPtr  = OptionsGroup*;
-		using ClockPtr = Clock*;
+        using TextPtr = Text*;
+        using BtnPtr = TextButton*;
+        using TextButtonGroupPtr = TextButtonGroup*;
+        using ScrTextButtonGroupPtr = ScrollableTextButtonGroup*;
+        using TextGroupPtr = TextGroup*;
+        using SubjectPtr = Subject*;
+        using GroupPtr = Group*;
+        using LifeViewerPtr = LifeViewer*;
+        using BossLifeViewerPtr = BossLifeViewer*;
+        using OptionsGroupPtr  = OptionsGroup*;
+        using ClockPtr = Clock*;
 
     public:
         static Scene* curr_scene;
@@ -89,16 +89,16 @@ namespace ue{
         void showStartScreen();
 
         void showGameScreen(size_t diff);
-		void showSelectDifficultyScreen();
-		void showEndScreen(Level& level, bool win);
-		void showLevelScreen(size_t n, std::string& name);
-		void showScoreScreen();
-		void showStatsScreen();
+        void showSelectDifficultyScreen();
+        void showEndScreen(Level& level, bool win);
+        void showLevelScreen(size_t n, std::string& name);
+        void showScoreScreen();
+        void showStatsScreen();
 
         void showHUD();
-		void showOptionsScreen();
+        void showOptionsScreen();
 
-		void removeOptionsScreen();
+        void removeOptionsScreen();
         void removeLevelScreen();
         void removeHUD();
         void removeScoreScreen();
@@ -113,34 +113,34 @@ namespace ue{
         void toggleFullScreen();
         void recreate();
 
-        TextPtr 				difficultyText, versionText, pauseText, levelText,
-								bossText, bossNameText, pressSpaceText,
-								ywText, scoreScreenText, fps, optionsText, statsText;
+        TextPtr                 difficultyText, versionText, pauseText, levelText,
+                                bossText, bossNameText, pressSpaceText,
+                                ywText, scoreScreenText, fps, optionsText, statsText;
 
-		TextButtonGroupPtr 		startMenu, pauseButtons, ywButtons,
-								chooseDifficultyButtons;
+        TextButtonGroupPtr         startMenu, pauseButtons, ywButtons,
+                                chooseDifficultyButtons;
 
-        ScrTextButtonGroupPtr 	scores;
+        ScrTextButtonGroupPtr     scores;
 
-        TextGroupPtr 			ywStats, pointsLevelTime, statsGroup;
+        TextGroupPtr             ywStats, pointsLevelTime, statsGroup;
 
-        SubjectPtr 				blackScreen, space, title, clearScreen;
+        SubjectPtr                 blackScreen, space, title, clearScreen;
 
-        GroupPtr 				bossGroup, pointsGroup;
+        GroupPtr                 bossGroup, pointsGroup;
 
         OptionsGroupPtr         optionsMenu;
 
-        LifeViewerPtr			viewer;
+        LifeViewerPtr            viewer;
 
-		BossLifeViewerPtr 		bossViewer;
+        BossLifeViewerPtr         bossViewer;
 
-		ClockPtr 				watch;
+        ClockPtr                 watch;
     private:
         sf::Clock clock;
-        std::vector<SubjectPtr> 		toRemove;
-        std::vector<SubjectPtr> 		toAdd;
-        std::vector<TimeJob> 			jobsToAdd;
-        std::vector<TimeJob> 			jobs;
+        std::vector<SubjectPtr>         toRemove;
+        std::vector<SubjectPtr>         toAdd;
+        std::vector<TimeJob>             jobsToAdd;
+        std::vector<TimeJob>             jobs;
         bool toClear = false, toClearJobs = false;
 
         void update(float tpf);

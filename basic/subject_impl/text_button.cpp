@@ -3,7 +3,7 @@
 #include "engine/scene.hpp"
 
 namespace ue{
-	 bool Button::isSelected(){
+     bool Button::isSelected(){
         return selected;
     }
 

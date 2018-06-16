@@ -2,7 +2,7 @@
 #include "io/data.hpp"
 
 namespace ue{
-	void TextGroup::addText(std::string text, size_t size, sf::Color color){
+    void TextGroup::addText(std::string text, size_t size, sf::Color color){
         Text* t = new Text;
         t->text.setString(text);
         t->text.setCharacterSize(size);
@@ -17,7 +17,7 @@ namespace ue{
         texts.push_back(t);
     }
 
-	void TextGroup::paintOn(sf::RenderTarget& window){
+    void TextGroup::paintOn(sf::RenderTarget& window){
         unsigned int n = 0;
         for(size_t i = 0; i < texts.size(); i++){
             Text& text = *texts[i];

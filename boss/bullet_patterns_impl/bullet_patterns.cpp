@@ -9,8 +9,8 @@ namespace ue{
     bargs_t bargs = bargs_t();
     pargs_t pargs = pargs_t();
 
-	namespace bullets{
-	    void throwBullet(const bargs_t& bargs){
+    namespace bullets{
+        void throwBullet(const bargs_t& bargs){
             float theta = ANGLE_TO_THETA(bargs.angle);
             sf::Vector2f absoluteDirection = { std::cos(theta), std::sin(theta) };
 
@@ -39,17 +39,17 @@ namespace ue{
                 bargs.bullets->push_back(bullet);
             }
             GAME.addCollidable(bullet);
-	    }
+        }
 
-	    void throwPattern(const bargs_t& _bargs, const pargs_t& _pargs){
-	        bargs_t bargs = _bargs;
-	        pargs_t pargs = _pargs;
+        void throwPattern(const bargs_t& _bargs, const pargs_t& _pargs){
+            bargs_t bargs = _bargs;
+            pargs_t pargs = _pargs;
 
             if(!pargs.n_bullets){
                 pargs.n_bullets = pargs.n_items;
             }
 
-	        if(pargs.tbi){
+            if(pargs.tbi){
                 TimeJob job;
                 if(pargs.n_items){
                     job.ptr = new size_t(0);
@@ -98,7 +98,7 @@ namespace ue{
                 job.canErase = false;
 
                 SCENE.addTimeJob(job);
-	        } else {
+            } else {
                 for(size_t i = 0; i < pargs.n_items; i++){
                     if(pargs.n_bullets != pargs.n_items){
                         TimeJob inner;
@@ -128,7 +128,7 @@ namespace ue{
                     bargs.angle += pargs.iangle;
                     bargs.cangle += pargs.icangle;
                 }
-	        }
-	    }
-	}
+            }
+        }
+    }
 }

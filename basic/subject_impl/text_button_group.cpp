@@ -2,7 +2,7 @@
 #include "engine/scene.hpp"
 
 namespace ue{
-	 void TextButtonGroup::paintOn(sf::RenderTarget& window){
+     void TextButtonGroup::paintOn(sf::RenderTarget& window){
         unsigned int n = 0;
         for(size_t i = 0; i < buttons.size(); i++){
             TextButton& btn = *buttons[i];

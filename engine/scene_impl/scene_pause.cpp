@@ -2,7 +2,7 @@
 #include "io/save.hpp"
 
 namespace ue{
-	void Scene::togglePauseGame(){
+    void Scene::togglePauseGame(){
         if(Game::curr_game){
             GAME.paused = !GAME.paused;
             if(GAME.paused){

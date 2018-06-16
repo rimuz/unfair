@@ -6,7 +6,7 @@ namespace ue{
     sf::View sceneView;
     sf::View gameView;
 
-	void Game::paintOn(sf::RenderTarget& window){
+    void Game::paintOn(sf::RenderTarget& window){
         stopped = showingLevel || showingYw;
         in_game = !stopped;
 
@@ -184,7 +184,7 @@ namespace ue{
         window.setView(sceneView);
     }
 
-	void Game::addCollidable(Collidable& coll){
+    void Game::addCollidable(Collidable& coll){
         toAdd.push_back(coll);
     }
 

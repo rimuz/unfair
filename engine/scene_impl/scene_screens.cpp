@@ -8,11 +8,11 @@
 #include <iostream>
 
 namespace ue{
-	void Scene::showStartScreen(){
-	    in_game = false;
-	    showing_game = false;
+    void Scene::showStartScreen(){
+        in_game = false;
+        showing_game = false;
 
-	    if(assets::bgMusic.getStatus() == sf::Music::Playing){
+        if(assets::bgMusic.getStatus() == sf::Music::Playing){
             assets::bgMusic.stop();
         }
 
@@ -64,9 +64,9 @@ namespace ue{
 
     void Scene::showGameScreen(size_t diff){
         in_game = false;
-	    showing_game = true;
+        showing_game = true;
 
-	    clearMemory();
+        clearMemory();
 
         Game* game = new Game(diff);
         game->viewer = viewer;

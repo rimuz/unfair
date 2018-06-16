@@ -1,7 +1,7 @@
 #include "basic/subject.hpp"
 
 namespace ue{
-	void Group::addSubject(Subject* subj){
+    void Group::addSubject(Subject* subj){
         subjects.push_back(subj);
     }
 
