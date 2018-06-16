@@ -4,8 +4,8 @@ Unfair is a simple game written in **C++11** using **SFML**.
 I gave it this name for his challenging difficulty which is pretty common for
 **bullet-hell** games.
 
-I apologize in advance for the *messy* code :D
-
+All indentation errors are due to a horrible text editor I used years ago D: 
+And.. I apologize in advance for the *messy* and *bad* code :D
 
 # License
 Unfair is licensed under the **Apache License 2.0** (read 'LICENSE' for more info)
