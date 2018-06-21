@@ -7,15 +7,15 @@ I gave it this name for his challenging difficulty which is pretty common for
 
 ## Features
   - 5 unlockable difficulty levels
-  - 5 bosses to beat
+  - 5 unique bosses to beat
   - Shoot with left click; move with WASD; bomb with Space, Q or right click
   - Each bullet has a velocity, acceleration, angular velocity, angular acceleration and more
   - In-game statistics (games played, wins, losses, average score, etc.)
   - Scores recording system
   - An embedded clock
-  - Different visual options (V-sync, AntiAliasing, etc.)
-  - In-game cheats to have more lives or bombs and change level
-  - Awful splash screen (skippable pressing 'Escape')
+  - Several visual options (V-sync, AntiAliasing, etc.)
+  - In-game cheats which give you more lives and bombs or change level
+  - Awful splash screen (press 'Escape' to skip)
   
 ## Screenshots
 <img src="demo_img/sun.png" width="300" title="Boss: The Sun"></img>
@@ -29,4 +29,4 @@ I gave it this name for his challenging difficulty which is pretty common for
 <img src="demo_img/level5.png" width="250" title="Fifth Level"></img> 
 
 # License
-Unfair is licensed under the **Apache License 2.0** (read 'LICENSE' for more info)
+Unfair is licensed under the **Apache License 2.0** (read file 'LICENSE' for more info)
