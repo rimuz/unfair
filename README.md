@@ -1,6 +1,6 @@
 # Unfair
 Though this is an **old project** I wrote years ago, I wanted to share it here on GitHub.
-Unfair is a simple game written in **C++11** using **SFML**.
+Unfair is a simple game written in **C++14** using **SFML**.
 
 I gave it this name for his challenging difficulty which is pretty common for
 **bullet-hell** games. 
